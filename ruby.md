@@ -18,7 +18,7 @@
 * odkazy:
     * [Tato prezentace](https://ares.github.io/pruby/)
     * [Etherpad](https://v.etherpad.org/p/ruby_kurz)
-    * [Ruby installer a devkit](https://rubyinstaller.org/downloads/)
+    * [Ruby installer a devkit](http://rubyinstaller.org/downloads/)
     * [Git installer](https://git-scm.com/download/win)
     * [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
 
