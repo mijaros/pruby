@@ -1,0 +1,41 @@
+Vytvořte třídu MorseCoder, která bude mít dvě metody,
+encode a decode. Jako základ použijte implementaci druhé
+úlohy.
+
+Změňte implementaci tak, aby se oddělovač (symbol |) nastavoval
+jako argument konstruktoru, přičemž symbol | bude výchozí hodnotou.
+
+V rámci třídy MorseCoder implementujte počítadlo, které se zvýší
+pokaždé, když se zavolá metoda encode a decode. Implementujte
+třídní metody, která vrátí aktuální stav počítadla.
+
+Vytvořte potomka třídy MorseCoder s názvem VerifiableMorseCoder,
+která bude definovat metodu verify, jejíž argument bude ověřovací
+string. Metoda verify string zakóduje a ihned zase dekóduje, výsledek
+porovná s původní hodnotou. Výsledkem tedy bude true pokud jsou
+hodnoty stejné, false v opačném případě.
+
+------------
+
+Dále vytvořte třídu Bike simulující jízdní kolo. Konstruktor
+bude akceptovat tři povinné parametry, maximální počet předních
+a zadních převodů a jméno. Dále bude akceptovat další nepovinné
+údaje - barva a velikost kol s výchozí hodnotou 26.
+
+Třída bude mít registr všech vytvořených instancí kol. Každé
+kolo bude mít výchozí převody nastavené na 1. Definujte dvě
+metody front_gear_up! a front_gear_down! které změní aktuální
+přední převod nahoru či dolu (respektující maximum a minimum).
+Stejným způsobem definujte metody pro zadní převod.
+
+Dále definujte metody:
+* current_gear, která vypíše stringovou reprezentaci aktuálního převodu například "2x7".
+* go! - ujede vzdálenost která se spočítá jako přední převod vynásobený zadním převodem a velikostí kol / 10 (tedy např. 2.6 nebo 2.9)
+* distance - celková ujetá vzdálenost, výchozí hodnota každého kola je 0
+* action - náhodně provede jednu z akcí front_gear_up! front_gear_down! rear_gear_up! rear_gear_down! go!
+všechny budou mít pravděpodobnost 1/10, jediná go! bude mít pravděpodobnost 6/10
+
+Pro implementaci metody action použijte rand(n), která vrací náhodné číslo od 0 do n-1
+
+Poslední implementovaná metoda bude to_s která vrátí stringovou reprezentaci kola ve formátu
+@name (@wheel_size"): najeto @distance

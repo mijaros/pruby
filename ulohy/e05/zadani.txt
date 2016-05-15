@@ -1,0 +1,33 @@
+Do konstruktoru MorseCoder z úlohy E03 přidejte další argument "transmitter".
+ Dále dodefinujte metodu transmit, ktera bude akceptovat
+jako jediný argument string, ktery nejprve zakóduje do morseovky a výsledek použije jako
+argument metody puts volané na transmitteru zadaném v konstruktoru.
+
+Dále nadefinujte třídu StandardTransmitter, která bude mít jedinou metodu puts. Tato
+metoda bude akceptovat jediný parametr, který vypíše na standardní výstup. Její instanci
+pak použijte jako transmitter argument při vytváření instance MorseCoder.
+
+Poté implementujte vlastní třídu DebugTransmitter, také s metodou puts, která svůj argument
+vytiskne jednak délku zadaného argumentu a poté argument samotný avšak upravený metodou
+inspect.
+
+Vyzkoušejte, že metoda transmit třídy MorseCode funguje s instancemi obou transmitterů.
+Vyzkoušejte jak se výstup liší pro transmit prázdného stringu u obou Transmitterů.
+Přidejte do konstruktoru kontrolu, že zadaný transmitter implementuje metodu puts.
+Pokud ji nedefinuje, vypište varování.
+
+Dále implementujte pomocí method_missing na třídě MorseCode rozhraní tak, aby volání
+metody s názvem jednoho písmenka abecedy vrátilo dané písmenko zakódované, tedy
+např.
+
+    coder = MorseCode.new('|', StandardTransmitter)
+    coder.a # => '.-'
+    coder.b # => '-...'
+
+--------
+
+Ve třídě bike upravte metody front_gear_up! front_gear_down! rear_gear_up! rear_gear_down! tak,
+aby používaly stejný kód. Nejprve definujte privátni metodu shift, která přeřadí na zadané
+převodu zadaným směrem. Tuto metodu použijte ze všech řadících metod. Poté tyto metody nahraďte
+pomocí method_missing.
+

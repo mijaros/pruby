@@ -1,0 +1,35 @@
+Pomocí vláken implementujte skript, který spustí MorseServer z úlohy E07 na portech
+2000 - 2019 zároveň.
+
+-------
+
+Implementujte jednoduchý port scanner, který na zadané cílové IP adrese prověří,
+zda server poslouchá na rozsahu TCP portů. Porty i cílový server budou předány
+jako argumenty skriptu, tedy např.
+
+    ruby scanner.rb localhost 1 30
+
+Pokud je na cílovém serveru firewall, který tiše zahazuje pakety, považujte port
+za zavřený po 2 sekundách. Otevřené porty vypište na standardní výstup.
+
+Zlepšete rychlost skenování pomocí threadů. Skript bude akceptovat další parametr
+a sice počet threadů v poolu, které budou skenovat porty paralelně. Thready
+postupně projdou všechny porty z rozsahu, každý port však bude oskenován
+pouze jedním vláknem.
+
+porovnejte dobu běhu
+
+    ruby scanner.rb ip_lektora 1 30 1
+    ruby scanner.rb ip_lektora 1 30 30
+
+-------
+
+Vytvořte třídu Race, jejíž konstruktor bude akceptovat pole objektů Bike z páté úlohy a číslo,
+které bude představovat délku závodu. Třída Race dále bude mít metodu start, která pro každé
+kolo pustí ve vláknu jednoduchý cyklus, který na kole zavolá metodu action a poté počká 1 vteřinu.
+To bude provádět do té doby, dokud ujetá vzdálenost kola není větší než délka závodu.
+
+Až všechny kola dokončí závod, vypište pořadí v jakém dojely. Poté přidejte ještě počítání skutečného
+času. Aktuální čas zjistíte pomocí volání Time.now. Uložte si tedy čas při startu threaady a těsně
+před koncem a rozdíl vypište. Porovnejte pořadí s vypsanými časy.
+popsat bike race - sleep 1 casy vs poradi dokonceni

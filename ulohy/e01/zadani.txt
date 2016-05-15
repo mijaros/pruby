@@ -1,0 +1,16 @@
+Implementujte těla metod v souboru e01_implementing_basic_methods.rb.
+
+Pokud chcete své implementace otestovat, můžete spustit soubor t01_implementing_basic_methods.rb,
+který spustí automatické testy. Pokud výstup obsahuje pět teček, úkol jste splnili.
+
+Je možné že pro spuštění testů bude třeba nejprve doinstalovat knihovnu minitest,
+to lze provést v terminálu příkazem
+
+   gem install minitest
+
+Více o instalaci knihoven se dozvíte později
+
+význam výsledků testů
+. - test proběhl
+F - některá z podmínek testu (assert) neprošla
+E - nezachycená chyba při testování

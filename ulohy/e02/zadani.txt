@@ -1,0 +1,19 @@
+Zkopírujte si soubor s metodami z první úlohy, pojmenujte jej jako e02_methods.rb
+Zjednodušte implementaci pomocí iterátorů (alespoň v palindroms_count, power_of_2? a build_hash_from)
+Zkopírujte i soubor s testy, upravte v něm název testovaného souboru a ověřte, že jste změnou
+nerozbili žádný test.
+
+Dále vytvořte skript morse_coder.rb definující dvě metody encode a decode, které budou
+zadaný svůj stringový argument převádět na morseovku a zpět.
+Pro převod použijte soubor morse.rb, který definuje konstantu MORSE. Při převodu z textu
+na morseovku jako oddělovač mezi písmenky použijte symbol |. Mezery mezi slovy ponechte
+jako mezery.
+
+Dále si vytvořte skript, který morse_coder.rb načte a zavolá metody encode a decode,
+abyste ověřili, že fungují správně
+
+Příklad:
+
+  # encode('hello world') should return '....|.|.-..|.-..|--- .--|---|.-.|.-..|-..'
+  # decode(encode('hello world')) # => 'hello_world'
+

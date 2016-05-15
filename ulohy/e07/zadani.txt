@@ -1,0 +1,23 @@
+Napište skript, který otevře TCP spojení na server s danou IP adresou
+na náhodný port v rozsahu 2000 až 2019. Jakmile se připojí, vytvoří instanci
+třídy MorseCoder z úlohy E06 a předá otevřený socket jako transmitter.
+Pomocí metody transmit této instance zašle libovolnou několika řádkovou zprávu.
+
+Na každém portu běží TCP server očekávající spojení. Jakmile se klient připojí,
+musí poslat zprávu ".....\n" na kterou server čeká. Jakmile ji server přijme,
+měl by odpovědět zprávou "ready\n". Poté přijímá řádky textu v morseovce, které
+dešifruje a vypisuje na terminál. Před odpojením musí klient poslat ukončovací
+zprávu "-----\n" na kterou server odpovídá "bye bye" a uzavírá spojení.
+
+Při nějaké chybě v protokolu či spojení se server restartuje. Restart může trvat
+až 1 vteřinu.
+
+--------------
+
+Poté implementujte vlastní server, který bude poslouchat na portu 2000. Server
+implementujte jako třídu MorseServer, která bude port a IP adresu na které poslouchá
+očekávat jako argumenty svého konstruktoru. Při chybě se server odpojí a začne znovu
+poslouchat na stejném portu.
+
+Otestujte svoji implementaci pomocí skriptu z první části. Jakmile budete mít implementaci
+připravenou, nechte server otestovat vzdáleně lektora.

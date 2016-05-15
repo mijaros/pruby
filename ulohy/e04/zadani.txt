@@ -1,0 +1,12 @@
+Nadefinujte moduly StringExtensions, NumericExtensions, ArrayExtensions. Do prvního vložte metody
+palindrom? a separate_by?, do druhého power_of_2? a do třetího build_hash_from a palindroms_count
+z druhé úlohy. Upravte implementaci taky, aby metody nepřijímaly argumenty, nad kterými provádí
+operace ale používali sami sebe (v Ruby klíčové slovo self odkazuje na sama sebe).
+
+Poté tyto moduly includujte do tříd String, Numeric a Array. Vykoušejte si, že vložené metody
+fungují na vestavěných objektech (např. 4.power_of_2? # => true)
+
+---
+
+Dále vytvořte modul, který includujete do třídy MorseCoder z úlohy 3. Po includování bude
+metoda decode místo slov oddělených mezerou vracet slova oddělená znakem nového řádku "\n".
