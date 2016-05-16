@@ -24,23 +24,6 @@
 
 ---
 
-# Základní vlastnosti jazyka
-
-* Interpretovaný
-* Plně objektový
-* Vše jsou výrazy (expression)
-* Automatická správa paměti
-* Silně typovaný
-* Dynamicky typovaný
-
-<br />
-
-     !ruby
-     a = "x"
-     b = a + 2
-
----
-
 # Instalace
 
 * standardní balíčkovací systémy
@@ -65,6 +48,23 @@
 * git, github
 * [https://github.com/ares/pruby/](https://github.com/ares/pruby/)
 * textový editor - [https://atom.io](https://atom.io)
+
+---
+
+# Základní vlastnosti jazyka
+
+* Interpretovaný
+* Plně objektový
+* Vše jsou výrazy (expression)
+* Automatická správa paměti
+* Silně typovaný
+* Dynamicky typovaný
+
+<br />
+
+     !ruby
+     a = "x"
+     b = a + 2
 
 ---
 
