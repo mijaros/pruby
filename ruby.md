@@ -16,7 +16,7 @@
 * vlastní počítače
 * programovací úlohy
 * odkazy:
-    * [Tato prezentace](https://ares.github.io/pruby/)
+    * [https://ares.github.io/pruby/](https://ares.github.io/pruby/)
     * [Etherpad](https://v.etherpad.org/p/ruby_kurz)
     * [Ruby installer a devkit](http://rubyinstaller.org/downloads/)
     * [Git installer](https://git-scm.com/download/win)
@@ -63,6 +63,7 @@
 
 * terminál
 * git, github
+* [https://github.com/ares/pruby/](https://github.com/ares/pruby/)
 * textový editor - [https://atom.io](https://atom.io)
 
 ---
