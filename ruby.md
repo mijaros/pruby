@@ -200,7 +200,7 @@ Tzv.  statement modifiers
 
 * běžné logické operátory: `&&` `||` `!`
 * operátory pro řízení běhu: `and` `or`
-* porovnávací operátory: `==` `<` `>` `>=` `>=` `=~`
+* porovnávací operátory: `==` `<` `>` `>=` `<=` `=~` `!=`
 * líné vyhodnocování a nelíné varianty `&` a `|`
 
 ---
@@ -1150,7 +1150,7 @@ inicializace v souboru
 
 # Tipy a triky a co se jinam nevešlo
 
-* Memoize pattern (víceřádkové)
+* Memoize pattern, &. (2.3), map(&:upcase)
 * gem pry
 * [Popularita Ruby](http://www.tiobe.com/tiobe_index)
 * další implementace
