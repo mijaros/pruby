@@ -2,7 +2,7 @@ Definujte vlastní výjimku MorseCoder::InvalidTransmitter a ve třídě MorseCo
 z páté úlohy v konstruktoru ji vyhoďte, pokud zadaný transmitter neimplementuje
 metodu puts.
 
-Vytvořte skript, který přečtěte soubor zadaný morse_input.txt a jeho obsah 
+Vytvořte skript, který přečte soubor morse_input.txt a jeho obsah 
 přeneste pomocí MorseCode a DebugTransmitteru. Poté skript upravte tak,
 aby jako vstupní soubor použil soubor zadaný jako první parametr při spuštění,
 pokud žádny parametr zadán není, pak použije 'morse_input.txt'.
