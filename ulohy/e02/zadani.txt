@@ -1,3 +1,25 @@
+Copy script with methods from previous task, rename it to e02_methods.rb.
+Simplify the implementation using iterators (at least in palindroms_count, power_of_2? and build_hash_from)
+Copy the test script too and make sure your changes didn't break any test.
+
+Then create a script morse_coder.rb which defines two methods - enconde and decode. They
+will accept one string argument which they encode (or decode) to morse code.
+For encoding and decoding use a file morse.rb, which defines constant MORSE.
+As a separator between letters in morse code use pipe |. Separator between
+words should remain as spaces.
+
+Then create another script that loads morse_coder.rb and calls both encode and decode
+on a string to verify it returns the same result
+
+Example
+
+Příklad:
+
+  # encode('hello world') should return '....|.|.-..|.-..|--- .--|---|.-.|.-..|-..'
+  # decode(encode('hello world')) # => 'hello_world'
+
+#########################################################################################################
+
 Zkopírujte si soubor s metodami z první úlohy, pojmenujte jej jako e02_methods.rb
 Zjednodušte implementaci pomocí iterátorů (alespoň v palindroms_count, power_of_2? a build_hash_from)
 Zkopírujte i soubor s testy, upravte v něm název testovaného souboru a ověřte, že jste změnou

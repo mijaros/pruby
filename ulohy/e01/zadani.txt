@@ -1,3 +1,23 @@
+Implement bodies of method in file e01_implementing_basic_methods.rb.
+
+If you want to test your methods, you can run script in t01_implementing_basic_methods.rb,
+which runs tests. If you see 5 dots as an output, you've succeeded.
+
+For running tests it might be necessary to install minitest library first,
+you can do it by
+
+  gem install minitest
+
+You'll learn more about library installations later.
+
+Test symbols meaning
+
+. - test passes
+F - some of assertions failed
+E - unhandled exception raised during the test
+
+################################################################################################
+
 Implementujte těla metod v souboru e01_implementing_basic_methods.rb.
 
 Pokud chcete své implementace otestovat, můžete spustit soubor t01_implementing_basic_methods.rb,
