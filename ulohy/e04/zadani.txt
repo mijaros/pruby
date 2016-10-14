@@ -1,13 +1,13 @@
-Define module StringExtensions, NumericExtensions, ArrayExtensions.
-Into the first one, insert methods palindrom? and separate_by?, into
-the second one power_of_2?, and into the third module build_hash_from
-and palindroms_count from the task 02. Modify the implementation so
+Define module `StringExtensions`, `NumericExtensions`, `ArrayExtensions`.
+Into the first one, insert methods `palindrom?` and `separate_by?`, into
+the second one `power_of_2?`, and into the third module `build_hash_from`
+and `palindroms_count` from the task E02. Modify the implementation so
 that it doesn't take arguments to perform operations on, but rather
 use the data from the object itself (using keyword `self`).
 
-After doing that, include the modules into classes String, Numeric and
-Array. Try, that the included methods work on all the objects (e.g.
-4.power_of_2? # => true).
+After doing that, include the modules into classes `String`, `Numeric` and
+`Array`. Try, that the included methods work on all the objects (e.g.
+`4.power_of_2? # => true`).
 
 ############################################################################################
 

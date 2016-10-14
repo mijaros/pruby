@@ -1,5 +1,45 @@
-Do konstruktoru MorseCoder z úlohy E03 přidejte další argument "transmitter".
- Dále dodefinujte metodu transmit, ktera bude akceptovat
+Into the initializer of `MorseCoder` from task E03 add next argument
+`transmitter`. Then, define method `transmit`, which will accept one
+string as the only argument. This method will first encode the string
+into Morse code and it uses the result as an argument of method `puts`
+called on the `transmitter` given in the initializer.
+
+Then, define class `StandardTransmitter` that will have a method
+`puts`. This method will accept one string argument and it will write
+the argument on standard output. An instance of this class then use as
+`transmitter` argument when creating a MorseCoder instance.
+
+Then implement class `DebugTransmitter` that will also define method
+`puts`. In this case however, it will print both length of the object
+and then result of `inspect` method called on the argument.
+
+Try, that this method `transmit` of the class `MorseCode` works with
+instances of both transmitter classes. Check on the difference when
+calling the `transmit` method with empty string.
+
+Put check into the initializer of `MorseCode` that the `transmitter`
+implements method `puts`. If it doesn't it will print a warning.
+
+Then, implement an interfaces on a class `MorseCode` using
+`method_missing`, so that calling a single character method will
+return Morse code of that character, e. g:
+
+    coder = MorseCode.new('|', StandardTransmitter)
+    coder.a # => '.-'
+    coder.b # => '-...'
+
+--------
+
+In the class `Bike` edit methods `front_gear_up!`, `front_gear_down!`,
+`rear_gear_up!` and `rear_gear_down!` so that it uses the same code.
+First, define private method `shift` that will switch the gear the
+given direction. This method use in all relevant methods. Then,
+replace the methods with `method_missing`.
+
+############################################################################################
+
+Do konstruktoru MorseCoder z úlohy E03 přidejte další argument `transmitter`.
+Dále dodefinujte metodu transmit, ktera bude akceptovat
 jako jediný argument string, ktery nejprve zakóduje do morseovky a výsledek použije jako
 argument metody puts volané na transmitteru zadaném v konstruktoru.
 
